@@ -1,14 +1,27 @@
 import React, { useId } from "react";
+import Todo from "./Todo";
 
-function Todos({ todoList }) {
-  const id =useId
-  return <div>
-    {
-      todoList ? 
-          console.log(todoList)
-       : <h1>TODO IS EMPTs</h1>
-    }
-  </div>;
+function Todos({ todoLists, removetodo, checktodo }) {
+  return (
+    <div>
+      {todoLists ? (
+        todoLists.map((todoList) => {
+          return (
+            <Todo
+              key={todoList.id}
+              todoList={todoList.datas}
+              removetodo={removetodo}
+              id={todoList.id}
+              checked={todoList.checked}
+              checktodo={checktodo}
+            />
+          );
+        })
+      ) : (
+        <h1>TODO IS EMPTY</h1>
+      )}
+    </div>
+  );
 }
 
 export default Todos;

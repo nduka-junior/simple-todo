@@ -5,10 +5,49 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(150, 150, 150, 0.716);
+  padding: 20% 10%;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
+#root {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10% 0;
+  background-color: rgba(245, 245, 245, 0.869);
+  box-shadow: 3px 0px 8px 7px rgba(150, 149, 149, 0.566);
+}
+.todo-form {
+  display: flex;
+  align-items: center;
+}
+.todo-form > input {
+  height: 30px;
+  outline: none;
+  font-size: 17px;
+}
+.todo-form > button {
+  padding: 8px;
+  margin-left: 10px;
+}
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 10px ;
+  border-bottom: 1px solid rgba(86, 86, 86, 0.628);
+}
+.todo-icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.delete {
+  border: none;
+  font-size: 30px;
+}
