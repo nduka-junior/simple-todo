@@ -18,7 +18,7 @@ function Todos({ todoLists, removetodo, checktodo }) {
           );
         })
       ) : (
-        <h1>TODO IS EMPTY</h1>
+        <h1>TODO IS EMPTYsss</h1>
       )}
     </div>
   );
